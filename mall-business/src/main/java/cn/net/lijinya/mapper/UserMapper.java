@@ -1,7 +1,7 @@
 package cn.net.lijinya.mapper;
 
-import cn.net.lijinya.entity.UserConditionEntity;
-import cn.net.lijinya.entity.UserEntity;
+import cn.net.lijinya.entity.user.UserConditionEntity;
+import cn.net.lijinya.entity.user.UserEntity;
 
 import java.util.List;
 

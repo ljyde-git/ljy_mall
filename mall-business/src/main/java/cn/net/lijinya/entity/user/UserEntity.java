@@ -1,5 +1,6 @@
-package cn.net.lijinya.entity;
+package cn.net.lijinya.entity.user;
 
+import cn.net.lijinya.entity.BaseEntity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

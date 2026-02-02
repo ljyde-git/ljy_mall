@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.net.lijinya.mapper.UserMapper">
 
-    <resultMap type="cn.net.lijinya.entity.UserEntity"
+    <resultMap type="cn.net.lijinya.entity.user.UserEntity"
                id="userResult">
         <result property="id" column="id"/>
         <result property="userName" column="user_name"/>
@@ -54,7 +54,7 @@
     </select>
 
     <select id="searchByCondition"
-            parameterType="cn.net.lijinya.entity.UserConditionEntity"
+            parameterType="cn.net.lijinya.entity.user.UserConditionEntity"
             resultMap="userResult">
         SELECT
         <include refid="selectUserColumn"/>
@@ -64,7 +64,7 @@
     </select>
 
     <select id="searchCount"
-            parameterType="cn.net.lijinya.entity.UserConditionEntity"
+            parameterType="cn.net.lijinya.entity.user.UserConditionEntity"
             resultType="int">
         SELECT
         COUNT(*)
@@ -73,7 +73,7 @@
     </select>
 
 
-    <update id="update" parameterType="cn.net.lijinya.entity.UserEntity">
+    <update id="update" parameterType="cn.net.lijinya.entity.user.UserEntity">
         UPDATE user
         <set>
             <if test="userName != null and userName != ''">
@@ -105,7 +105,7 @@
         WHERE id = #{id}
     </delete>
 
-    <insert id="insert" parameterType="cn.net.lijinya.entity.UserEntity">
+    <insert id="insert" parameterType="cn.net.lijinya.entity.user.UserEntity">
         INSERT INTO user
         (
             id
