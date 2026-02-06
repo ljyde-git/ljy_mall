@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class UserEntity extends BaseEntity {
+public class UserDemoEntity extends BaseEntity {
 
     /**
      * 用户名称

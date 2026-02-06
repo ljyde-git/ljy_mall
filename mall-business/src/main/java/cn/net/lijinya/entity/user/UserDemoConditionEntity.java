@@ -7,7 +7,7 @@ import lombok.Data;
  * 用户条件实体类
  */
 @Data
-public class UserConditionEntity extends RequestPageEntity {
+public class UserDemoConditionEntity extends RequestPageEntity {
     /**
      * 系统ID
      */
