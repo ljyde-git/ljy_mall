@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.net.lijinya.mapper.DeptMapper">
     
-    <resultMap type="cn.net.lijinya.entity.DeptEntity" id="DeptResult">
+    <resultMap type="cn.net.lijinya.entity.sys.DeptEntity" id="DeptResult">
         <result property="id"    column="id" />
         <result property="name"    column="name" />
         <result property="pid"    column="pid" />
@@ -96,7 +96,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchByCondition"
-            parameterType="cn.net.lijinya.entity.DeptConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.DeptConditionEntity"
             resultMap="DeptResult">
         SELECT
         <include refid="selectDeptColumn"/>
@@ -106,7 +106,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchCount"
-            parameterType="cn.net.lijinya.entity.DeptConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.DeptConditionEntity"
             resultType="int">
         SELECT
         COUNT(*)
@@ -115,7 +115,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
 
-    <update id="update" parameterType="cn.net.lijinya.entity.DeptEntity">
+    <update id="update" parameterType="cn.net.lijinya.entity.sys.DeptEntity">
         UPDATE sys_dept
         <trim prefix="SET" suffixOverrides=",">
                                                         
@@ -179,7 +179,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         WHERE id = #{id}
     </delete>
 
-    <insert id="insert" parameterType="cn.net.lijinya.entity.DeptEntity">
+    <insert id="insert" parameterType="cn.net.lijinya.entity.sys.DeptEntity">
         INSERT INTO sys_dept
         <trim prefix="(" suffix=")" suffixOverrides=",">
                                                         

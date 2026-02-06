@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import cn.net.lijinya.entity.ResponsePageEntity;
-import cn.net.lijinya.entity.RoleMenuConditionEntity;
-import cn.net.lijinya.entity.RoleMenuEntity;
+import cn.net.lijinya.entity.sys.RoleMenuConditionEntity;
+import cn.net.lijinya.entity.sys.RoleMenuEntity;
 import cn.net.lijinya.service.RoleMenuService;
 import javax.validation.constraints.NotNull;
 

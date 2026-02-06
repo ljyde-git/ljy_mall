@@ -26,7 +26,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @author 苏三，该项目是知识星球：java突击队 的内部项目
+ * @author 李进涯
  * @date 2024/1/8 下午4:45
  */
 @Configuration

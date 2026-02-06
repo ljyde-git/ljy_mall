@@ -4,8 +4,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import cn.net.lijinya.mapper.DeptMapper;
-import cn.net.lijinya.entity.DeptConditionEntity;
-import cn.net.lijinya.entity.DeptEntity;
+import cn.net.lijinya.entity.sys.DeptConditionEntity;
+import cn.net.lijinya.entity.sys.DeptEntity;
 import cn.net.lijinya.entity.ResponsePageEntity;
 
 /**

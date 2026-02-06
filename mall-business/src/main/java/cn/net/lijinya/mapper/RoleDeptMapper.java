@@ -1,7 +1,7 @@
 package cn.net.lijinya.mapper;
 
-import cn.net.lijinya.entity.RoleDeptConditionEntity;
-import cn.net.lijinya.entity.RoleDeptEntity;
+import cn.net.lijinya.entity.sys.RoleDeptConditionEntity;
+import cn.net.lijinya.entity.sys.RoleDeptEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

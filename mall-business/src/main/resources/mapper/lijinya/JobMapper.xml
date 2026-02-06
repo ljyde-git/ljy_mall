@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.net.lijinya.mapper.JobMapper">
     
-    <resultMap type="cn.net.lijinya.entity.JobEntity" id="JobResult">
+    <resultMap type="cn.net.lijinya.entity.sys.JobEntity" id="JobResult">
         <result property="id"    column="id" />
         <result property="name"    column="name" />
         <result property="sort"    column="sort" />
@@ -102,7 +102,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchByCondition"
-            parameterType="cn.net.lijinya.entity.JobConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.JobConditionEntity"
             resultMap="JobResult">
         SELECT
         <include refid="selectJobColumn"/>
@@ -112,7 +112,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchCount"
-            parameterType="cn.net.lijinya.entity.JobConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.JobConditionEntity"
             resultType="int">
         SELECT
         COUNT(*)
@@ -121,7 +121,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
 
-    <update id="update" parameterType="cn.net.lijinya.entity.JobEntity">
+    <update id="update" parameterType="cn.net.lijinya.entity.sys.JobEntity">
         UPDATE sys_job
         <trim prefix="SET" suffixOverrides=",">
                                                         
@@ -190,7 +190,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         WHERE id = #{id}
     </delete>
 
-    <insert id="insert" parameterType="cn.net.lijinya.entity.JobEntity">
+    <insert id="insert" parameterType="cn.net.lijinya.entity.sys.JobEntity">
         INSERT INTO sys_job
         <trim prefix="(" suffix=")" suffixOverrides=",">
                                                         

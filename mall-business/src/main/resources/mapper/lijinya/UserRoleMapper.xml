@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.net.lijinya.mapper.UserRoleMapper">
     
-    <resultMap type="cn.net.lijinya.entity.UserRoleEntity" id="UserRoleResult">
+    <resultMap type="cn.net.lijinya.entity.sys.UserRoleEntity" id="UserRoleResult">
         <result property="id"    column="id" />
         <result property="userId"    column="user_id" />
         <result property="roleId"    column="role_id" />
@@ -48,7 +48,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchByCondition"
-            parameterType="cn.net.lijinya.entity.UserRoleConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.UserRoleConditionEntity"
             resultMap="UserRoleResult">
         SELECT
         <include refid="selectUserRoleColumn"/>
@@ -58,7 +58,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchCount"
-            parameterType="cn.net.lijinya.entity.UserRoleConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.UserRoleConditionEntity"
             resultType="int">
         SELECT
         COUNT(*)
@@ -67,7 +67,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
 
-    <update id="update" parameterType="cn.net.lijinya.entity.UserRoleEntity">
+    <update id="update" parameterType="cn.net.lijinya.entity.sys.UserRoleEntity">
         UPDATE sys_user_role
         <trim prefix="SET" suffixOverrides=",">
                                                         
@@ -91,7 +91,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         WHERE id = #{id}
     </delete>
 
-    <insert id="insert" parameterType="cn.net.lijinya.entity.UserRoleEntity">
+    <insert id="insert" parameterType="cn.net.lijinya.entity.sys.UserRoleEntity">
         INSERT INTO sys_user_role
         <trim prefix="(" suffix=")" suffixOverrides=",">
                                                         

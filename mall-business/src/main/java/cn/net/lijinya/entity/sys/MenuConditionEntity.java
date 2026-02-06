@@ -1,17 +1,18 @@
-package cn.net.lijinya.entity;
+package cn.net.lijinya.entity.sys;
 
-import lombok.Data;
 import cn.net.lijinya.entity.RequestPageEntity;
+import lombok.Data;
+
 import java.util.Date;
 
 /**
- * 岗位查询条件实体
+ * 菜单查询条件实体
  * 
  * @author 李进涯 该项目是知识星球：java突击队 的内部项目
  * @date 2026-02-05 17:24:57
  */
 @Data
-public class JobConditionEntity extends RequestPageEntity {
+public class MenuConditionEntity extends RequestPageEntity {
 	
 
 	/**
@@ -20,24 +21,54 @@ public class JobConditionEntity extends RequestPageEntity {
 	private Long id;
 
 	/**
-	 *  岗位名称
+	 *  菜单名称
      */
 	private String name;
 
 	/**
-	 *  岗位排序
+	 *  上级菜单ID
+     */
+	private Long pid;
+
+	/**
+	 *  排序
      */
 	private Integer sort;
 
 	/**
-	 *  部门ID
+	 *  图标
      */
-	private Long deptId;
+	private String icon;
 
 	/**
-	 *  有效状态 1:有效 0:无效
+	 *  路由
      */
-	private Integer validStatus;
+	private String path;
+
+	/**
+	 *  是否隐藏
+     */
+	private Integer hidden;
+
+	/**
+	 *  是否外链 1：是 0：否
+     */
+	private Integer isLink;
+
+	/**
+	 *  类型 1：目录 2：菜单 3：按钮
+     */
+	private Integer type;
+
+	/**
+	 *  功能权限
+     */
+	private String permission;
+
+	/**
+	 *  url地址
+     */
+	private String url;
 
 	/**
 	 *  创建人ID

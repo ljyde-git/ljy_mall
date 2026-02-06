@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import cn.net.lijinya.entity.ResponsePageEntity;
-import cn.net.lijinya.entity.JobConditionEntity;
-import cn.net.lijinya.entity.JobEntity;
+import cn.net.lijinya.entity.sys.JobConditionEntity;
+import cn.net.lijinya.entity.sys.JobEntity;
 import cn.net.lijinya.service.JobService;
 import javax.validation.constraints.NotNull;
 

@@ -4,8 +4,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import cn.net.lijinya.mapper.MenuMapper;
-import cn.net.lijinya.entity.MenuConditionEntity;
-import cn.net.lijinya.entity.MenuEntity;
+import cn.net.lijinya.entity.sys.MenuConditionEntity;
+import cn.net.lijinya.entity.sys.MenuEntity;
 import cn.net.lijinya.entity.ResponsePageEntity;
 
 /**

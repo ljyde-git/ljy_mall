@@ -1,4 +1,4 @@
-package cn.net.lijinya.entity;
+package cn.net.lijinya.entity.sys;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

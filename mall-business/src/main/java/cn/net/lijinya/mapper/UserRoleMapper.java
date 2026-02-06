@@ -1,7 +1,7 @@
 package cn.net.lijinya.mapper;
 
-import cn.net.lijinya.entity.UserRoleConditionEntity;
-import cn.net.lijinya.entity.UserRoleEntity;
+import cn.net.lijinya.entity.sys.UserRoleConditionEntity;
+import cn.net.lijinya.entity.sys.UserRoleEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

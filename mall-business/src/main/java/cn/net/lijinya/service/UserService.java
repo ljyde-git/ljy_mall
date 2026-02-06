@@ -4,8 +4,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import cn.net.lijinya.mapper.UserMapper;
-import cn.net.lijinya.entity.UserConditionEntity;
-import cn.net.lijinya.entity.UserEntity;
+import cn.net.lijinya.entity.sys.UserConditionEntity;
+import cn.net.lijinya.entity.sys.UserEntity;
 import cn.net.lijinya.entity.ResponsePageEntity;
 
 /**

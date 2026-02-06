@@ -1,17 +1,18 @@
-package cn.net.lijinya.entity;
+package cn.net.lijinya.entity.sys;
 
-import lombok.Data;
 import cn.net.lijinya.entity.RequestPageEntity;
+import lombok.Data;
+
 import java.util.Date;
 
 /**
- * 菜单查询条件实体
+ * 用户查询条件实体
  * 
  * @author 李进涯 该项目是知识星球：java突击队 的内部项目
  * @date 2026-02-05 17:24:57
  */
 @Data
-public class MenuConditionEntity extends RequestPageEntity {
+public class UserConditionEntity extends RequestPageEntity {
 	
 
 	/**
@@ -20,54 +21,59 @@ public class MenuConditionEntity extends RequestPageEntity {
 	private Long id;
 
 	/**
-	 *  菜单名称
+	 *  头像
      */
-	private String name;
+	private Long avatarId;
 
 	/**
-	 *  上级菜单ID
+	 *  邮箱
      */
-	private Long pid;
+	private String email;
 
 	/**
-	 *  排序
+	 *  密码
      */
-	private Integer sort;
+	private String password;
 
 	/**
-	 *  图标
+	 *  用户名
      */
-	private String icon;
+	private String userName;
 
 	/**
-	 *  路由
+	 *  部门ID
      */
-	private String path;
+	private Long deptId;
 
 	/**
-	 *  是否隐藏
+	 *  手机号码
      */
-	private Integer hidden;
+	private String phone;
 
 	/**
-	 *  是否外链 1：是 0：否
+	 *  岗位ID
      */
-	private Integer isLink;
+	private Long jobId;
 
 	/**
-	 *  类型 1：目录 2：菜单 3：按钮
+	 *  最后修改密码的时间
      */
-	private Integer type;
+	private Date lastChangePasswordTime;
 
 	/**
-	 *  功能权限
+	 *  别名
      */
-	private String permission;
+	private String nickName;
 
 	/**
-	 *  url地址
+	 *  性别 1：男 2：女
      */
-	private String url;
+	private Integer sex;
+
+	/**
+	 *  有效状态 1:有效 0:无效
+     */
+	private Integer validStatus;
 
 	/**
 	 *  创建人ID

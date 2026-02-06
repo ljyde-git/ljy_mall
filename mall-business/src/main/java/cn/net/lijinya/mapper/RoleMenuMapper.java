@@ -1,7 +1,7 @@
 package cn.net.lijinya.mapper;
 
-import cn.net.lijinya.entity.RoleMenuConditionEntity;
-import cn.net.lijinya.entity.RoleMenuEntity;
+import cn.net.lijinya.entity.sys.RoleMenuConditionEntity;
+import cn.net.lijinya.entity.sys.RoleMenuEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

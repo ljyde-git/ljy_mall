@@ -1,7 +1,7 @@
-package cn.net.lijinya.entity;
+package cn.net.lijinya.entity.sys;
 
-import lombok.Data;
 import cn.net.lijinya.entity.RequestPageEntity;
+import lombok.Data;
 
 /**
  * 角色部门关联查询条件实体

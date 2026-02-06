@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.net.lijinya.mapper.MenuMapper">
     
-    <resultMap type="cn.net.lijinya.entity.MenuEntity" id="MenuResult">
+    <resultMap type="cn.net.lijinya.entity.sys.MenuEntity" id="MenuResult">
         <result property="id"    column="id" />
         <result property="name"    column="name" />
         <result property="pid"    column="pid" />
@@ -138,7 +138,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchByCondition"
-            parameterType="cn.net.lijinya.entity.MenuConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.MenuConditionEntity"
             resultMap="MenuResult">
         SELECT
         <include refid="selectMenuColumn"/>
@@ -148,7 +148,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchCount"
-            parameterType="cn.net.lijinya.entity.MenuConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.MenuConditionEntity"
             resultType="int">
         SELECT
         COUNT(*)
@@ -157,7 +157,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
 
-    <update id="update" parameterType="cn.net.lijinya.entity.MenuEntity">
+    <update id="update" parameterType="cn.net.lijinya.entity.sys.MenuEntity">
         UPDATE sys_menu
         <trim prefix="SET" suffixOverrides=",">
                                                         
@@ -256,7 +256,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         WHERE id = #{id}
     </delete>
 
-    <insert id="insert" parameterType="cn.net.lijinya.entity.MenuEntity">
+    <insert id="insert" parameterType="cn.net.lijinya.entity.sys.MenuEntity">
         INSERT INTO sys_menu
         <trim prefix="(" suffix=")" suffixOverrides=",">
                                                         

@@ -1,7 +1,7 @@
 package cn.net.lijinya.mapper;
 
-import cn.net.lijinya.entity.DeptConditionEntity;
-import cn.net.lijinya.entity.DeptEntity;
+import cn.net.lijinya.entity.sys.DeptConditionEntity;
+import cn.net.lijinya.entity.sys.DeptEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

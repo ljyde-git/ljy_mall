@@ -4,8 +4,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import cn.net.lijinya.mapper.JobMapper;
-import cn.net.lijinya.entity.JobConditionEntity;
-import cn.net.lijinya.entity.JobEntity;
+import cn.net.lijinya.entity.sys.JobConditionEntity;
+import cn.net.lijinya.entity.sys.JobEntity;
 import cn.net.lijinya.entity.ResponsePageEntity;
 
 /**

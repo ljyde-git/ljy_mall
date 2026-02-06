@@ -4,8 +4,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import cn.net.lijinya.mapper.RoleMapper;
-import cn.net.lijinya.entity.RoleConditionEntity;
-import cn.net.lijinya.entity.RoleEntity;
+import cn.net.lijinya.entity.sys.RoleConditionEntity;
+import cn.net.lijinya.entity.sys.RoleEntity;
 import cn.net.lijinya.entity.ResponsePageEntity;
 
 /**

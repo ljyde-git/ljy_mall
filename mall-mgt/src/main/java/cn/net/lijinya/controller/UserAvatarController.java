@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import cn.net.lijinya.entity.ResponsePageEntity;
-import cn.net.lijinya.entity.UserAvatarConditionEntity;
-import cn.net.lijinya.entity.UserAvatarEntity;
+import cn.net.lijinya.entity.sys.UserAvatarConditionEntity;
+import cn.net.lijinya.entity.sys.UserAvatarEntity;
 import cn.net.lijinya.service.UserAvatarService;
 import javax.validation.constraints.NotNull;
 

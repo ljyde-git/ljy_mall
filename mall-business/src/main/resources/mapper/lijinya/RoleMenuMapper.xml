@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.net.lijinya.mapper.RoleMenuMapper">
     
-    <resultMap type="cn.net.lijinya.entity.RoleMenuEntity" id="RoleMenuResult">
+    <resultMap type="cn.net.lijinya.entity.sys.RoleMenuEntity" id="RoleMenuResult">
         <result property="id"    column="id" />
         <result property="roleId"    column="role_id" />
         <result property="menuId"    column="menu_id" />
@@ -48,7 +48,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchByCondition"
-            parameterType="cn.net.lijinya.entity.RoleMenuConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.RoleMenuConditionEntity"
             resultMap="RoleMenuResult">
         SELECT
         <include refid="selectRoleMenuColumn"/>
@@ -58,7 +58,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchCount"
-            parameterType="cn.net.lijinya.entity.RoleMenuConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.RoleMenuConditionEntity"
             resultType="int">
         SELECT
         COUNT(*)
@@ -67,7 +67,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
 
-    <update id="update" parameterType="cn.net.lijinya.entity.RoleMenuEntity">
+    <update id="update" parameterType="cn.net.lijinya.entity.sys.RoleMenuEntity">
         UPDATE sys_role_menu
         <trim prefix="SET" suffixOverrides=",">
                                                         
@@ -91,7 +91,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         WHERE id = #{id}
     </delete>
 
-    <insert id="insert" parameterType="cn.net.lijinya.entity.RoleMenuEntity">
+    <insert id="insert" parameterType="cn.net.lijinya.entity.sys.RoleMenuEntity">
         INSERT INTO sys_role_menu
         <trim prefix="(" suffix=")" suffixOverrides=",">
                                                         

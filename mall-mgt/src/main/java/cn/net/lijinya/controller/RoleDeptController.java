@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import cn.net.lijinya.entity.ResponsePageEntity;
-import cn.net.lijinya.entity.RoleDeptConditionEntity;
-import cn.net.lijinya.entity.RoleDeptEntity;
+import cn.net.lijinya.entity.sys.RoleDeptConditionEntity;
+import cn.net.lijinya.entity.sys.RoleDeptEntity;
 import cn.net.lijinya.service.RoleDeptService;
 import javax.validation.constraints.NotNull;
 

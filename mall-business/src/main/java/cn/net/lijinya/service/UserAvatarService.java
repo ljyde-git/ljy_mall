@@ -4,8 +4,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import cn.net.lijinya.mapper.UserAvatarMapper;
-import cn.net.lijinya.entity.UserAvatarConditionEntity;
-import cn.net.lijinya.entity.UserAvatarEntity;
+import cn.net.lijinya.entity.sys.UserAvatarConditionEntity;
+import cn.net.lijinya.entity.sys.UserAvatarEntity;
 import cn.net.lijinya.entity.ResponsePageEntity;
 
 /**

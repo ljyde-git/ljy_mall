@@ -1,7 +1,7 @@
 package cn.net.lijinya.mapper;
 
-import cn.net.lijinya.entity.JobConditionEntity;
-import cn.net.lijinya.entity.JobEntity;
+import cn.net.lijinya.entity.sys.JobConditionEntity;
+import cn.net.lijinya.entity.sys.JobEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

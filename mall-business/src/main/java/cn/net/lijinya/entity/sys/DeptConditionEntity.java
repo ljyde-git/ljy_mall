@@ -1,38 +1,39 @@
-package cn.net.lijinya.entity;
+package cn.net.lijinya.entity.sys;
 
-import lombok.Data;
 import cn.net.lijinya.entity.RequestPageEntity;
+import lombok.Data;
+
 import java.util.Date;
 
 /**
- * 用户头像查询条件实体
+ * 部门查询条件实体
  * 
  * @author 李进涯 该项目是知识星球：java突击队 的内部项目
  * @date 2026-02-05 17:24:57
  */
 @Data
-public class UserAvatarConditionEntity extends RequestPageEntity {
+public class DeptConditionEntity extends RequestPageEntity {
 	
 
 	/**
-	 *  
+	 *  ID
      */
 	private Long id;
 
 	/**
-	 *  文件名
+	 *  名称
      */
-	private String fileName;
+	private String name;
 
 	/**
-	 *  路径
+	 *  上级部门ID
      */
-	private String path;
+	private Long pid;
 
 	/**
-	 *  大小
+	 *  有效状态 1:有效 0:无效
      */
-	private String fileSize;
+	private Integer validStatus;
 
 	/**
 	 *  创建人ID

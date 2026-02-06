@@ -1,7 +1,7 @@
 package cn.net.lijinya.mapper;
 
-import cn.net.lijinya.entity.UserAvatarConditionEntity;
-import cn.net.lijinya.entity.UserAvatarEntity;
+import cn.net.lijinya.entity.sys.UserAvatarConditionEntity;
+import cn.net.lijinya.entity.sys.UserAvatarEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

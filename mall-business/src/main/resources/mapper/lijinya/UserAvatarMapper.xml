@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.net.lijinya.mapper.UserAvatarMapper">
     
-    <resultMap type="cn.net.lijinya.entity.UserAvatarEntity" id="UserAvatarResult">
+    <resultMap type="cn.net.lijinya.entity.sys.UserAvatarEntity" id="UserAvatarResult">
         <result property="id"    column="id" />
         <result property="fileName"    column="file_name" />
         <result property="path"    column="path" />
@@ -96,7 +96,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchByCondition"
-            parameterType="cn.net.lijinya.entity.UserAvatarConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.UserAvatarConditionEntity"
             resultMap="UserAvatarResult">
         SELECT
         <include refid="selectUserAvatarColumn"/>
@@ -106,7 +106,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
     <select id="searchCount"
-            parameterType="cn.net.lijinya.entity.UserAvatarConditionEntity"
+            parameterType="cn.net.lijinya.entity.sys.UserAvatarConditionEntity"
             resultType="int">
         SELECT
         COUNT(*)
@@ -115,7 +115,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
 
-    <update id="update" parameterType="cn.net.lijinya.entity.UserAvatarEntity">
+    <update id="update" parameterType="cn.net.lijinya.entity.sys.UserAvatarEntity">
         UPDATE sys_user_avatar
         <trim prefix="SET" suffixOverrides=",">
                                                         
@@ -179,7 +179,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         WHERE id = #{id}
     </delete>
 
-    <insert id="insert" parameterType="cn.net.lijinya.entity.UserAvatarEntity">
+    <insert id="insert" parameterType="cn.net.lijinya.entity.sys.UserAvatarEntity">
         INSERT INTO sys_user_avatar
         <trim prefix="(" suffix=")" suffixOverrides=",">
                                                         

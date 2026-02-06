@@ -1,17 +1,18 @@
-package cn.net.lijinya.entity;
+package cn.net.lijinya.entity.sys;
 
-import lombok.Data;
 import cn.net.lijinya.entity.RequestPageEntity;
+import lombok.Data;
+
 import java.util.Date;
 
 /**
- * 部门查询条件实体
+ * 角色查询条件实体
  * 
  * @author 李进涯 该项目是知识星球：java突击队 的内部项目
  * @date 2026-02-05 17:24:57
  */
 @Data
-public class DeptConditionEntity extends RequestPageEntity {
+public class RoleConditionEntity extends RequestPageEntity {
 	
 
 	/**
@@ -25,14 +26,24 @@ public class DeptConditionEntity extends RequestPageEntity {
 	private String name;
 
 	/**
-	 *  上级部门ID
+	 *  备注
      */
-	private Long pid;
+	private String remark;
 
 	/**
-	 *  有效状态 1:有效 0:无效
+	 *  数据权限
      */
-	private Integer validStatus;
+	private String dataScope;
+
+	/**
+	 *  角色级别
+     */
+	private Integer level;
+
+	/**
+	 *  功能权限
+     */
+	private String permission;
 
 	/**
 	 *  创建人ID

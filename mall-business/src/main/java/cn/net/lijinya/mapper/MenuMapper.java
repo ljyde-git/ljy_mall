@@ -1,7 +1,7 @@
 package cn.net.lijinya.mapper;
 
-import cn.net.lijinya.entity.MenuConditionEntity;
-import cn.net.lijinya.entity.MenuEntity;
+import cn.net.lijinya.entity.sys.MenuConditionEntity;
+import cn.net.lijinya.entity.sys.MenuEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
